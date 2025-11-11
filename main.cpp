@@ -7,7 +7,7 @@
 
 using namespace std;
 
-// ==================== Person Class Implementation =========================
+
 Person::Person() {
     name = "";
     id = 0;
@@ -30,7 +30,6 @@ void Person::display() const {
     cout << "Name: " << name << " (ID: " << id << ")" << endl;
 }
 
-// ==================== Student Class Implementation ====================
 Student::Student() : Person() {
     yearLevel = 0;
     major = "";
@@ -55,7 +54,6 @@ void Student::display() const {
     cout << "Major: " << major << endl;
 }
 
-// ==================== Instructor Class Implementation ====================
 Instructor::Instructor() : Person() {
     department = "";
     experienceYears = 0;
@@ -80,7 +78,6 @@ void Instructor::display() const {
     cout << "Experience: " << experienceYears << " years" << endl;
 }
 
-// ==================== Course Class Implementation ====================
 Course::Course() {
     courseCode = "";
     courseName = "";
@@ -131,7 +128,6 @@ void Course::displayCourseInfo() const {
     }
 }
 
-// ==================== Main Function ====================
 int main() {
     Instructor inst("Dr. Lina Khaled", 1001, "Computer Science", 5);
     Student s1("Omar Nabil", 2202, 2, "Informatics");
